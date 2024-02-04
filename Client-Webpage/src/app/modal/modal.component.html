@@ -1,0 +1,17 @@
+<div class="modal-header">
+  <h5 class="modal-title" id="exampleModalLabel">Welchen Gruppen gehörst du an?</h5>
+</div>
+<div class="modal-body">
+  <input [(ngModel)]="name" type="text" name="name" id="name" placeholder="Dein voller Name">
+
+  <br>
+
+  <input [(ngModel)]="group" type="radio" name="group" id="wi21a" value="wi21a">WI21A
+  <br>
+  <input [(ngModel)]="group" type="radio" name="group" id="feier" value="feier">Feier
+  <br>
+  <input [(ngModel)]="group" type="radio" name="group" id="projektarbeit" value="projektarbeit">Projektarbeit
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" (click)="close()" [disabled]="!name || !group">Save changes</button>
+</div>
