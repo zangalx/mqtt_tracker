@@ -2,7 +2,6 @@ import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {ModalComponent} from "../modal/modal.component";
 import {NgbModal, NgbModalRef} from "@ng-bootstrap/ng-bootstrap";
 import { MqttLocationService } from '../mqtt.service';
-import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-map',
@@ -12,7 +11,6 @@ import { environment } from '../../environments/environment';
 export class MapComponent implements OnInit {
   modalRef: NgbModalRef | null = null;
   data: any;
-  googleMapsKey = environment.GOOGLE_MAPS_KEY;
   zoom = 30;
   markers: any[] = []
   // Google Maps einbinden, Quelle: https://timdeschryver.dev/blog/google-maps-as-an-angular-component

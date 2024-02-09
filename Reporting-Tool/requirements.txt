@@ -2,3 +2,4 @@ functions-framework==3.*
 paho-mqtt
 google.cloud.storage
 pandas
+python-dotenv

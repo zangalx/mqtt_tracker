@@ -74,7 +74,11 @@
               "buildTarget": "friendtracker:build:development"
             }
           },
-          "defaultConfiguration": "development"
+          "defaultConfiguration": "production",
+          "options": {
+            "buildTarget": "friendtracker:build",
+            "proxyConfig": "proxy.conf.js"
+          } 
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
